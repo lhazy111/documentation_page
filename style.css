@@ -1,0 +1,7 @@
+h1, h2{
+    text-align: center;
+    background-color: grey;
+    margin:0px;
+    padding:5px;
+    text-shadow: 1px 1px 10px greenyellow;
+}
