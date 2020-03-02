@@ -22,70 +22,217 @@
         <div class="row">
             <div class="col-2 border-right sidebar">
                 <nav id="navbar" class="nav flex-column position-fixed">
-                    <header></header>
-                    <a class="nav-link" href="#Section_1">Section 1</a>
-                    <a class="nav-link" href="#Section_2">Section 2</a>
-                    <a class="nav-link" href="#Section_3">Section 3</a>
-                    <a class="nav-link" href="#Section_4">Section 4</a>
-                    <a class="nav-link" href="#Section_5">Section 5</a>
+                    <header>CSS</header>
+                    <a class="nav-link" href="#CSS_Introduction">CSS Introduction</a>
+                    <a class="nav-link" href="#CSS_Syntax">CSS Syntax</a>
+                    <a class="nav-link" href="#CSS_Selectors">CSS Selectors</a>
+                    <a class="nav-link" href="#How_to_add_CSS">How to add CSS</a>
+                    <a class="nav-link" href="#CSS_Comments">CSS Comments</a>
                 </nav>
             </div>
 
             <div class="col-10">
                 <main id="main-doc">
-                    <section class="main-section" id="Section_1">
-                        <header>Section 1</header>
-                        <p>Section 1 code:</p>
-                        <code>Section 1 code</code>
+                    <section class="main-section" id="CSS_Introduction">
+                        <header>CSS Introduction</header>
+                        <h3>What is CSS?</h3>
+                        <!--p>Section 1 code:</p>
+                        <code>Section 1 code</code-->
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li>CSS stands for Cascading Style Sheets</li>
+                            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                            </li>
+                            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                            </li>
+                            <li>External stylesheets are stored in CSS files
+                            </li>
                         </ul>
-                        <p></p>
-                    </section>
-                    <section class="main-section" id="Section_2">
-                        <header>Section 2</header>
+                        <h3>Why Use CSS?</h3>
+                        <p>CSS is used to define styles for your web pages, including the design, layout and variations
+                            in display for different devices and screen sizes.</p>
+                        <h4>CSS Example:</h4>
+                        <code>
+                                body {
+                                    background-color: lightblue;
+                                  }
+                                  <br>
+                                  h1 {
+                                    color: white;
+                                    text-align: center;
+                                  }
+                                  <br>
+                                  p {
+                                    font-family: verdana;
+                                    font-size: 20px;
+                                  }
+                            </code>
+                        <br>
+                        <br>
+                        <h3>
+                            CSS Solved a Big Problem
+                        </h3>
                         <p>
-                            <code></code>
+                            HTML was NEVER intended to contain tags for formatting a web page!
+
+                            HTML was created to describe the content of a web page, like: <br>
+                            &lt h1 &gt This is a heading &lt/ h1 &gt <br>
+
+                            &lt p &gt This is a paragraph. &lt/p&gt <br>
+
+                            When tags like &lt font &gt, and color attributes were added to the HTML 3.2 specification,
+                            it
+                            started a nightmare for web developers. Development of large websites, where fonts and
+                            color information were added to every single page, became a long and expensive process.
+
+                            To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+
+                            CSS removed the style formatting from the HTML page!
+                        </p>
+                        <p>
+                            CSS Saves a Lot of Work!
+                            The style definitions are normally saved in external .css files.
+
+                            With an external stylesheet file, you can change the look of an entire website by changing
+                            just one file!
+                        </p>
+                    </section>
+                    <section class="main-section" id="CSS_Syntax">
+                        <header>CSS Syntax</header>
+                        <p>
+                            A CSS rule-set consists of a selector (h1) and a declaration block {...} :
+                        </p>
+                        <p>
+                            <code>
+                                h1 {color:blue; font-size:12px;}
+                            </code>
+                        </p>
+                        <p>
+                            The selector points to the HTML element you want to style.
+                        </p>
+                        <p>
+                            The declaration block contains one or more declarations separated by semicolons.
+                        </p>
+                        <p>
+                            Each declaration includes a CSS property name and a value, separated by a colon.
+                        </p>
+                        <p>
+                            A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by
+                            curly braces.
+                        </p>
+                        <h4>
+                            Example:
+                        </h4>
+                        <p>
+                            In this example all &lt p &gt elements will be center-aligned, with a red text color:
+                        </p>
+                        <p>
+                            <code>
+                            p {
+                            color: red;
+                            text-align: center;
+                            }
+                            </code>
+                        </p>
+                        <h5>
+                            Example Explained:
+                        </h5>
+                        <ul>
+                            <li><strong>p</strong> is a selector in CSS (it points to the HTML element you want to
+                                style: &lt p &gt).
+                            </li>
+                            <li><strong>color</strong> is a property, and red is the property value</li>
+                            <li><strong>text-align</strong> is a property, and center is the property value</li>
+                        </ul>
+                    </section>
+                    <section class="main-section" id="CSS_Selectors">
+                        <header>CSS Selectors</header>
+                        <p>
+                            CSS selectors are used to "find" (or select) the HTML elements you want to style.
+                        </p>
+                        <p>
+                            We can divide CSS selectors into five categories:
+                        </p>
+                        <p>
                             <ul>
-                                <li></li>
-                                <li></li>
+                                <li>Simple selectors (select elements based on name, id, class)</li>
+
+                                <li>Combinator selectors (select elements based on a specific relationship between them)
+                                </li>
+                                <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                                <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                                <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
                             </ul>
                         </p>
-                        <p></p>
-                    </section>
-                    <section class="main-section" id="Section_3">
-                        <header>Section 3</header>
+                        <h4>Example:</h4>
                         <p>
-                            <code></code>
+                            The CSS class Selector
+                        </p>
+                        <p>The class selector selects HTML elements with a specific class attribute.</p>
+                        <p>To select elements with a specific class, write a period (.) character, followed by the
+                            class name.</p>
+                        <p>In this example all HTML elements with class="center" will be red and center-aligned:</p>
+                        <code>.center {
+                        text-align: center;
+                        color: red;
+                        }</code>
+
+                        </p>
+                    </section>
+                    <section class="main-section" id="How_to_add_CSS">
+                        <header>How to add CSS</header>
+                        <p>
+                            When a browser reads a style sheet, it will format the HTML document according to the
+                            information in the style sheet.
+                        </p>
+                        <p>
+                            There are three ways of inserting a style sheet:
+                        </p>
+                        <p>
                             <ul>
-                                <li></li>
-                                <li></li>
+                                <li>External CSS</li>
+                                <li>Internal CSS</li>
+                                <li>Inline CSS</li>
                             </ul>
                         </p>
-                        <p></p>
-                    </section>
-                    <section class="main-section" id="Section_4">
-                        <header>Section 4</header>
                         <p>
-                            <code></code>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                            <strong>External CSS</strong>
                         </p>
-                        <p></p>
-                    </section>
-                    <section class="main-section" id="Section_5">
-                        <header>Section 5</header>
                         <p>
-                            <code></code>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                            With an external style sheet, you can change the look of an entire website by changing just
+                            one file!
                         </p>
-                        <p></p>
+                        <p>
+                            Each HTML page must include a reference to the external style sheet file inside the
+                            &lt link &gt element, inside the head section.
+                        </p>
+                        <p>
+                            An external style sheet can be written in any text editor, and must be saved with a .css
+                            extension.
+
+                            The external .css file should not contain any HTML tags.
+                        </p>
+                        <p>
+                            <strong>
+                                Internal CSS
+                            </strong>
+                        </p>
+                        <p>
+                            An internal style sheet may be used if one single HTML page has a unique style.
+                        </p>
+                        <p>
+                            The internal style is defined inside the &lt style &gt element, inside the head section.
+                        </p>
+                        <p>
+                            <strong>Inline CSS</strong>
+                        </p>
+                        <p>An inline style may be used to apply a unique style for a single element.</p>
+                        <p>To use inline styles, add the style attribute to the relevant element.</p>
+                        <p>The style attribute can contain any CSS property.</p>
+                    </section>
+                    <section class="main-section" id="CSS_Comments">
+                        <header>CSS Comments</header>
+                        <p>
+                        </p>
                     </section>
             </div>
         </div>
